@@ -1,0 +1,74 @@
+<html><head>
+  <meta charset="utf-8">
+  <title>PIGPEN</title>
+  <link rel="stylesheet" href="main.css">
+        
+        
+</head>
+<body BGCOLOR="#AED6F1">
+  <h1>POLYBIUS SQUARE CIPHER</h1>
+  <h4>What is it?</h4>
+  <p>The Polybius Square Cipher is a cipher where the letters in the message are turned into numbers.</p>
+  <h4>How to solve</h4>
+  <p>When solving the Polybius Square Cipher, the player is given an encrypted message and a table. To decrypt the message, the player will need to use the table. Each letter is made up of two numbers, the first being the row it is in and the second being the column it is in.</p>
+  <img src="question 1 example.png" alt="Polybius Square Cipher Example" width="500" height="300">"
+  
+  <h1>Question</h1> 
+  <h4>Find out where Hackerville is located!</h4>
+  <div class="container">
+  
+  <table style="width:100%" BORDER=10 BORDERCOLOR=NAVY>
+  <tbody><tr>
+      <th>ENCRYPTED MESSAGE</th>
+      <th>CIPHER</th> 
+    </tr>
+          
+    <tr> 
+      <td><center><strong><FONT COLOR="#a80000">
+        <p> 2311132515425124313115 </p> 
+        <p>2443</p>
+        <p>31341311441514</p>
+        <p>2433</p>
+        <p>43321131315124313115</p>
+      </FONT></strong></center></td>
+      <td><center><img src="question1cipher.jpg" alt="cipher" width="500" height="377"></center></td>
+    </tr>
+   
+  </tbody>
+  </table>
+  </div>
+          
+                  
+          
+          <h2>PUT YOUR DECRYPTED CODE HERE:</h2>
+  <h3>Hint: all letters are lowercase</h3>
+
+  <h3>Try to decrypt the encrypted message above! After decrypting it, type your answer into the box below and it will tell you if you are correct.</h3>
+  
+  <input id="theirguess">
+  
+  <button type="button" onclick="myFunction()">Submit</button>
+  
+  <p id="guessoutput"></p>
+    <script>function myFunction() {
+      var x, text;
+  
+      // Get the value of the input field with id="theirguess"
+      x = document.getElementById("theirguess").value;
+  
+      // does it match the phrase?
+      if (x == 'hackerville is located in smallville') {
+          text = "Correct!";
+      } else {
+          text = "Try again!";
+      }
+      document.getElementById("guessoutput").innerHTML = text;
+  }</script>      
+          
+          
+          <center>
+          <a href="question2.html"><button type="button">NEXT</button></a>
+          
+         </center>
+  
+</body></html>
