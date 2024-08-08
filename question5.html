@@ -1,0 +1,70 @@
+<html><head>
+  <meta charset="utf-8">
+  <title>PIGPEN</title>
+  <link rel="stylesheet" href="main.css">
+        
+        
+</head>
+<body BGCOLOR="#AED6F1">
+  <h1>Columnar Transposition Cipher (easy transpositional cipher)</h1>
+  <h4>What it is and how to solve</h4>
+  <img src="question 5 example.png" alt="Columnar Transposition Cipher Example" width="1000" height="500">"
+  <h1>Question</h1> 
+  <h4>Find out what Hackerville plans to attack!</h4>
+  <div class="container">
+  
+  <table style="width:100%" BORDER=10 BORDERCOLOR=NAVY>
+  <tbody><tr>
+      <th>ENCRYPTED MESSAGE</th>
+      <th>CIPHER</th> 
+    </tr>
+          
+    <tr>
+      <td><center><strong><FONT COLOR="#a80000">
+        <p>BAUHA YFTER TTIAT ESODE CONQR RLSUS</p> 
+      </FONT></strong></center></td>
+      <td><center><strong><FONT COLOR="#a80000">
+        <p>Table dimentions: 6x5</p> 
+      </FONT></strong></center></td>
+    </tr>
+   
+  </tbody></table>
+  
+  </div>
+          
+                  
+          
+          <h2>PUT YOUR DECRYPTED CODE HERE:</h2>
+  <h3>Hint: all letters are lowercase</h3>
+
+  <h3>Try to decrypt the encrypted message above! After decrypting it, type your answer into the box below and it will tell you if you are correct. Add spaces where appropriate.</h3>
+  
+  <input id="theirguess">
+  
+  <button type="button" onclick="myFunction()">Submit</button>
+  
+  <p id="guessoutput"></p>
+    <script>function myFunction() {
+      var x, text;
+  
+      // Get the value of the input field with id="theirguess"
+      x = document.getElementById("theirguess").value;
+  
+      // does it match the phrase?
+      if (x == 'bytecraft solutions headquarters') {
+          text = "Correct!";
+      } else {
+          text = "Try again!";
+      }
+      document.getElementById("guessoutput").innerHTML = text;
+  }</script>      
+          
+          <center>
+          <a href="question6.html"><button type="button">NEXT</button></a>
+          
+         </center>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h3>Stuck? Here is the table</h3>
+  <img src="question5.png" alt="BYTECRAFTSOLUTIONSHEADQUARTERS" width="500" height="500">"
+</body></html>

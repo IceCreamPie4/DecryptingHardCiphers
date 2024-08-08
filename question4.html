@@ -1,0 +1,59 @@
+<html><head>
+  <meta charset="utf-8">
+  <title>CAESER</title>
+  <link rel="stylesheet" href="main.css">
+        
+        
+</head>
+<body BGCOLOR="#AED6F1">
+  <h1>Caesars Cipher</h1> 
+  <h4>Find out who the leader of the cyber criminals is!</h4>
+  <div class="container">
+  
+  <table style="width:100%" BORDER=10 BORDERCOLOR=NAVY>
+  <tbody><tr>
+      <th>ENCRYPTED MESSAGE</th>
+      <th>CIPHER</th> 
+    </tr>
+          
+    <tr>
+      <td><center><strong><FONT COLOR="#a80000">gur yrnqre bs gur plore pevzvanyf vf qe unpxre</FONT></strong></center></td>
+      <td><center><img src="caesar.png" alt="cipher" width="500" height="377"></center></td>
+    </tr>
+   
+  </tbody></table>
+  
+  </div>
+          
+                  
+          
+          <h2>PUT YOUR DECRYPTED CODE HERE:</h2>
+  <h3>Hint: all letters are lowercase</h3>
+
+  <h3>Try to decrypt the encrypted message above! After decrypting it, type your answer into the box below and it will tell you if you are correct.</h3>
+  
+  <input id="theirguess">
+  
+  <button type="button" onclick="myFunction()">Submit</button>
+  
+  <p id="guessoutput"></p>
+    <script>function myFunction() {
+      var x, text;
+  
+      // Get the value of the input field with id="theirguess"
+      x = document.getElementById("theirguess").value;
+  
+      // does it match the phrase?
+      if (x == 'the leader of the cyber criminals is dr hacker') {
+          text = "Correct!";
+      } else {
+          text = "Try again!";
+      }
+      document.getElementById("guessoutput").innerHTML = text;
+  }</script>      
+          
+          <center>
+          <a href="question3.html"><button type="button">NEXT</button></a>
+          
+         </center>
+</body></html>
